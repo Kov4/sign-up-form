@@ -4,7 +4,6 @@ body,html {
     border:0;
 }
 
-
 body{
     height: 100vh;
     display: flex;
@@ -14,16 +13,29 @@ body{
 
 .left-container{
     display: flex;
-    flex-shrink: 0;
+    flex-direction: column;
+    
 }
-
 
 img{
     height: 100%;
 }
 
+.title{
+    display: flex;
+    position: relative;
+    bottom: 40vh;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    flex: 1 1 0;
+    
+}
+
 .title img{
-    height: 40px;
+    height: 80px;
 }
 
 .right-container{
@@ -31,8 +43,11 @@ img{
     flex: 1 1 0;
 }
 
-.title, .footer{
-    position: absolute;
-    bottom:0;
+.footer{
+    position: relative;
+    bottom: 17vh;
+    flex: 1 1 0;
+    text-align: center;
+    
 }
 
