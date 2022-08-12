@@ -23,7 +23,9 @@ a{
 }
 
 h1{
-    margin: 0;
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin-top: 0px;
 }
 
 .left-container{
@@ -78,6 +80,7 @@ h1{
 .blankContainer{
     background-color: white;
     padding: 20px 40px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 5px 5px;
 }
 
 .right-container>div{
@@ -88,9 +91,75 @@ h1{
     margin-bottom: 40px;
 }
 
-
-
-
 .title > * {
     padding: 10px;
 }
+
+.formInputs{
+    display: flex;
+}
+
+.leftFormCol div, .rightFormCol div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-right: 60px;
+}
+
+.formInputs label{
+    font-weight: 500;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(73, 73, 73);
+}
+
+button{
+    margin: 30px 40px;
+    padding: 10px 40px;
+    color: white;
+    background-color: rgba(229,193,135,255);
+    border: 0px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: rgba(33, 35, 38, 0.1) 2px 2px 2px;
+}
+
+.last-line{
+    padding: 0px 40px !important;
+    font-size: 14px;
+}
+
+.highlight{
+    color: rgba(229,193,135,255);
+}
+
+input{
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+input:focus{
+    box-shadow: rgb(0, 140, 255) 0px 0px 5px 0px;
+    outline: none;
+}
+
+input:focus:invalid{
+    box-shadow: rgb(255, 0, 0) 0px 0px 5px 0px;
+}
+
+input[type="password"]:focus:invalid ~.requirements{
+    max-height: 50px;
+    margin-bottom: -10px !important;
+}
+
+.requirements {
+ 
+    margin: 0 !important;
+    max-height: 0;
+    overflow: hidden;
+    color: red;
+    font-weight: 300;
+    font-size: 10px;
+  }
